@@ -56,28 +56,46 @@ locationFormatted
 console.log(locationFormatted)
 }
 
-//Question 5---------------------
-
 
 //Question 5---------------------
 /**
  *Make a function that will generate the random radius of a circle, and use the randomly generated radius to calculate the 
  * area of that circle. remember the formula to calculate a circle is PiR^2. Then use that circle to calculate the area of a cylinder with a height of 5. Note your code.
  */
-function circleArea(radius){
-  radius=Math.random(min=-5, max=10); //this will geerate a random number for the radius
-    if(
+function circleArea(radius) {
+    radius = Math.random(min = -5, max = 10); //this will geerate a random number for the radius
+    if (
         radius > 0
     ) //This will find if the radius is a positive number, as you cant really have negative radius circles
-    {Square = radius*radius; //This will calculate the square of the radius
-    Square.toFixed(2)
-    Area=(Math.PI*Square)} //This will do the math to calculte the area nd return the result
-    return(Area);
+    {
+        Square = radius * radius; //This will calculate the square of the radius
+        Square.toFixed(2)
+        Area = (Math.PI * Square)
+    } //This will do the math to calculte the area nd return the result
+    return (Area);
     return 0; //This will give you 0 if the circle radius is 0 or less than 0
 
-    function cylinder(){
-        
+    function cylinder() {
+        if (
+            radius > 0
+        )
+            cArea = (2 * (Math.PI) * radius * 5 + 2 * (Math.PI) * Square)
+        return (cArea);
+    }
+    //Question 6--------------------------------
+    /**
+     * Make a function that lists three car brands, and return how your favourite is cool.
+     * Then use the .slice function to remove the two you least like from the console.log you place below.
+    */
+} funciton cars(McLaren, VW, Audi){
+    if (
+        cars = McLaren
+    )
+        return ("Cool as heck".toUpperCase);
+    else (
+          console.log("Not as cool, in my personal opinion.")
+        )
+    function amount(McLaren, VW, Audi) {
+        console.log(amount.slice(-2));
     }
 }
-
-
